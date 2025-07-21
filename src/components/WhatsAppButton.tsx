@@ -17,7 +17,7 @@ export const WhatsAppButton = () => {
       <img 
         src="/lovable-uploads/859235eb-d75f-4ef1-bbb8-6d3fb5b37c55.png" 
         alt="WhatsApp"
-        className="w-6 h-6 group-hover:scale-110 transition-transform"
+        className="w-8 h-8 group-hover:scale-110 transition-transform"
       />
       
       {/* Tooltip */}

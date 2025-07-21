@@ -23,7 +23,7 @@ const NFePlus = () => {
           {/* Right column - Image Container */}
           <div className="xl:w-1/2 rounded-xl overflow-hidden shadow-xl animate-fade-in">
             <img 
-              src="/lovable-uploads/541797c4-735d-4fea-92b7-ed4a6a08fd64.png" 
+              src="/lovable-uploads/notebook.svg" 
               alt="NFe+ Sistema de emissão de notas fiscais" 
               className="w-full h-auto object-cover"
             />

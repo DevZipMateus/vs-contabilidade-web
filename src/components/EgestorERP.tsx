@@ -25,14 +25,6 @@ const EgestorERP = () => {
             <p className="text-sm text-gray-600 mb-3">
               Dobre seus lucros otimizando sua gestão
             </p>
-            <a 
-              href={egestorLink} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-block text-xs text-wine hover:text-wine-600 transition-colors underline decoration-1 underline-offset-2"
-            >
-              Saiba mais
-            </a>
           </div>
           
           {/* Right column - Video Container */}
@@ -52,6 +44,15 @@ const EgestorERP = () => {
               Seu navegador não suporta vídeos.
             </video>
           </div>
+        </div>
+        
+        {/* CTA Button - Centered below both columns */}
+        <div className="flex justify-center animate-fade-in mt-6">
+          <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-sm">
+            <button className="w-full py-3 bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+              Teste grátis
+            </button>
+          </a>
         </div>
       </div>
     </section>

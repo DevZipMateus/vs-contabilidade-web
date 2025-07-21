@@ -1,4 +1,5 @@
 
+
 import { Calendar, MapPin, Target, Handshake } from 'lucide-react';
 export const About = () => {
   return <section id="sobre" className="py-20 bg-white">
@@ -99,7 +100,7 @@ export const About = () => {
           <h3 className="text-3xl font-playfair font-bold text-white mb-6">
             Nossa Missão
           </h3>
-          <p className="text-xl max-w-4xl mx-auto leading-relaxed text-white">
+          <p className="text-xl max-w-4xl mx-auto leading-relaxed text-gray-700">
             Na V&S, não oferecemos apenas serviços — entregamos soluções que impulsionam negócios. 
             Combinamos excelência técnica com atendimento consultivo para transformar desafios 
             empresariais em oportunidades de crescimento.
@@ -108,3 +109,4 @@ export const About = () => {
       </div>
     </section>;
 };
+

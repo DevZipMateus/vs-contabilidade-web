@@ -1,9 +1,6 @@
-
 import { Calendar, MapPin, Target, Handshake } from 'lucide-react';
-
 export const About = () => {
-  return (
-    <section id="sobre" className="py-20 bg-white">
+  return <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -40,11 +37,7 @@ export const About = () => {
           {/* Image/Logo */}
           <div className="flex justify-center">
             <div className="bg-gradient-to-br from-wine-50 to-gold-50 p-12 rounded-2xl">
-              <img 
-                src="/lovable-uploads/17d567f2-a942-4452-b922-33eaf1b4be79.png" 
-                alt="V&S Soluções Empresariais e Contabilidade" 
-                className="h-40 w-auto mx-auto"
-              />
+              <img src="/lovable-uploads/17d567f2-a942-4452-b922-33eaf1b4be79.png" alt="V&S Soluções Empresariais e Contabilidade" className="h-40 w-auto mx-auto" />
             </div>
           </div>
         </div>
@@ -105,13 +98,12 @@ export const About = () => {
           <h3 className="text-3xl font-playfair font-bold text-white mb-6">
             Nossa Missão
           </h3>
-          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl max-w-4xl mx-auto leading-relaxed text-zinc-950">
             Na V&S, não oferecemos apenas serviços — entregamos soluções que impulsionam negócios. 
             Combinamos excelência técnica com atendimento consultivo para transformar desafios 
             empresariais em oportunidades de crescimento.
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

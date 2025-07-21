@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Phone, Mail, MessageSquare, Send, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -26,21 +25,42 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Mensagem enviada!",
-        description: "Entraremos em contato em breve.",
-      });
-      setFormData({
-        nome: '',
-        email: '',
-        telefone: '',
-        empresa: '',
-        mensagem: ''
-      });
-      setIsSubmitting(false);
-    }, 1000);
+    // Create WhatsApp message with all form data
+    const whatsappMessage = `*Nova solicitação de orçamento - V&S Soluções Empresariais*
+
+*Nome:* ${formData.nome}
+*E-mail:* ${formData.email}
+*Telefone:* ${formData.telefone}
+${formData.empresa ? `*Empresa:* ${formData.empresa}` : ''}
+
+*Mensagem:*
+${formData.mensagem}
+
+---
+_Enviado através do site vsgestaocontabil.com.br_`;
+
+    const phoneNumber = "5535988170909";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+
+    // Show success message
+    toast({
+      title: "Redirecionando para WhatsApp!",
+      description: "Você será direcionado para o WhatsApp com sua mensagem preenchida.",
+    });
+
+    // Reset form
+    setFormData({
+      nome: '',
+      email: '',
+      telefone: '',
+      empresa: '',
+      mensagem: ''
+    });
+    
+    setIsSubmitting(false);
   };
 
   return (
@@ -224,12 +244,12 @@ export const Contact = () => {
                 {isSubmitting ? (
                   <>
                     <CheckCircle size={20} />
-                    Enviando...
+                    Redirecionando...
                   </>
                 ) : (
                   <>
                     <Send size={20} />
-                    Enviar Mensagem
+                    Enviar via WhatsApp
                   </>
                 )}
               </button>

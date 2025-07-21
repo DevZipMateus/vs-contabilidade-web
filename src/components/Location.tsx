@@ -111,21 +111,18 @@ export const Location = () => {
             </div>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="bg-gray-100 rounded-xl overflow-hidden h-96 lg:h-full min-h-[400px] flex items-center justify-center">
-            <div className="text-center p-8">
-              <MapPin size={48} className="text-wine mx-auto mb-4" />
-              <h3 className="font-playfair font-semibold text-lg text-wine mb-2">
-                Mapa Interativo
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Nossa localização estratégica em Extrema/MG
-              </p>
-              <div className="text-sm text-gray-500">
-                Rua Presidente Kennedy, 43<br />
-                Extrema - MG
-              </div>
-            </div>
+          {/* Google Maps Embed */}
+          <div className="bg-gray-100 rounded-xl overflow-hidden h-96 lg:h-full min-h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8!2d-46.3119!3d-22.8551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9f0f8f8f8f8f8%3A0x8f8f8f8f8f8f8f8f!2sRua%20Presidente%20Kennedy%2C%2043%2C%20Extrema%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1635000000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização VS Gestão Contábil - Rua Presidente Kennedy, 43, Extrema - MG"
+            />
           </div>
         </div>
       </div>

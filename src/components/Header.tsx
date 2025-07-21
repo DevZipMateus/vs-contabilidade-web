@@ -40,16 +40,12 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/17d567f2-a942-4452-b922-33eaf1b4be79.png" 
               alt="V&S Soluções Empresariais e Contabilidade" 
               className="h-12 w-auto"
             />
-            <div className="hidden sm:block">
-              <h2 className="text-lg font-playfair font-bold text-wine">V&S Soluções</h2>
-              <p className="text-xs text-gray-600">Gestão Contábil</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}

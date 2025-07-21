@@ -10,16 +10,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center mb-6">
               <img 
                 src="/lovable-uploads/17d567f2-a942-4452-b922-33eaf1b4be79.png" 
                 alt="V&S Soluções Empresariais e Contabilidade" 
                 className="h-12 w-auto filter brightness-0 invert"
               />
-              <div>
-                <h3 className="text-lg font-playfair font-bold">V&S Soluções</h3>
-                <p className="text-sm text-white/80">Gestão Contábil</p>
-              </div>
             </div>
             <p className="text-white/80 leading-relaxed">
               Especialistas em contabilidade e regimes especiais de ICMS. 

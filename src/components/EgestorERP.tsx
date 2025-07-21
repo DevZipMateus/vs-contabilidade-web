@@ -1,35 +1,42 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const EgestorERP = () => {
   // Link for both the title and button
   const egestorLink = "https://www.egestor.com.br/afl/99";
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="py-12 bg-gray-50 overflow-hidden">
       <div className="container px-4 mx-auto max-w-6xl">
         {/* Two-column layout for desktop, stack on mobile */}
-        <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:gap-12 mb-10">
+        <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:gap-12">
           {/* Left column - Header Text */}
-          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 animate-fade-in">
+          <div className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
             <a 
               href={egestorLink} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-block hover:opacity-90 transition-opacity"
+              className="inline-block hover:opacity-80 transition-opacity"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+              <h3 className="text-xl md:text-2xl font-playfair font-semibold text-gray-700 mb-3 leading-tight">
                 Sistema de gestão empresarial
-              </h2>
+              </h3>
             </a>
-            <p className="text-lg md:text-xl text-gray-600 font-normal">
+            <p className="text-sm md:text-base text-gray-600 mb-4">
               Dobre seus lucros otimizando sua gestão
             </p>
+            <a 
+              href={egestorLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block text-sm text-wine hover:text-wine-600 transition-colors underline decoration-1 underline-offset-2"
+            >
+              Saiba mais
+            </a>
           </div>
           
           {/* Right column - Video Container */}
-          <div className="md:w-1/2 rounded-xl overflow-hidden shadow-xl animate-fade-in">
+          <div className="md:w-1/2 rounded-lg overflow-hidden shadow-md">
             <video 
               className="w-full aspect-video object-cover" 
               autoPlay 
@@ -45,20 +52,6 @@ const EgestorERP = () => {
               Seu navegador não suporta vídeos.
             </video>
           </div>
-        </div>
-        
-        {/* CTA Button - Centered below both columns */}
-        <div className="flex justify-center animate-fade-in">
-          <a 
-            href={egestorLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block w-full max-w-sm"
-          >
-            <button className="w-full py-3 bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
-              Teste grátis
-            </button>
-          </a>
         </div>
       </div>
     </section>

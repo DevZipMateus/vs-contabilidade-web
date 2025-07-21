@@ -1,4 +1,3 @@
-
 import { 
   Calculator, 
   FileText, 
@@ -141,7 +140,7 @@ export const Services = () => {
               <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-4">
                 Atendimento Especializado para MEIs
               </h3>
-              <p className="text-white/90 mb-6">
+              <p className="text-white mb-6">
                 Oferecemos suporte completo para Microempreendedores Individuais 
                 com foco na simplicidade e eficiência.
               </p>
@@ -149,19 +148,19 @@ export const Services = () => {
             
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-gold-300" />
+                <CheckCircle size={20} className="text-white" />
                 <span>Formalização e regularização de MEIs</span>
               </div>
               <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-gold-300" />
+                <CheckCircle size={20} className="text-white" />
                 <span>Emissão de guias DAS</span>
               </div>
               <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-gold-300" />
+                <CheckCircle size={20} className="text-white" />
                 <span>Suporte com obrigações acessórias</span>
               </div>
               <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-gold-300" />
+                <CheckCircle size={20} className="text-white" />
                 <span>Migração para Simples Nacional</span>
               </div>
             </div>

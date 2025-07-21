@@ -137,30 +137,30 @@ export const Services = () => {
         <div className="bg-gradient-to-r from-wine to-wine-600 rounded-2xl p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-4">
+              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-gray-700 mb-4">
                 Atendimento Especializado para MEIs
               </h3>
-              <p className="text-white mb-6">
+              <p className="text-gray-700 mb-6">
                 Oferecemos suporte completo para Microempreendedores Individuais 
                 com foco na simplicidade e eficiência.
               </p>
             </div>
             
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-white" />
+              <div className="flex items-center gap-3 text-gray-700">
+                <CheckCircle size={20} className="text-gray-700" />
                 <span>Formalização e regularização de MEIs</span>
               </div>
-              <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-white" />
+              <div className="flex items-center gap-3 text-gray-700">
+                <CheckCircle size={20} className="text-gray-700" />
                 <span>Emissão de guias DAS</span>
               </div>
-              <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-white" />
+              <div className="flex items-center gap-3 text-gray-700">
+                <CheckCircle size={20} className="text-gray-700" />
                 <span>Suporte com obrigações acessórias</span>
               </div>
-              <div className="flex items-center gap-3 text-white">
-                <CheckCircle size={20} className="text-white" />
+              <div className="flex items-center gap-3 text-gray-700">
+                <CheckCircle size={20} className="text-gray-700" />
                 <span>Migração para Simples Nacional</span>
               </div>
             </div>

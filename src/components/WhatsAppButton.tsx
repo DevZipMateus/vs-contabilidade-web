@@ -1,4 +1,5 @@
 
+
 export const WhatsAppButton = () => {
   const phoneNumber = "5535988170909";
   const message = "Olá! Gostaria de saber mais sobre os serviços da V&S Soluções Empresariais.";
@@ -6,7 +7,7 @@ export const WhatsAppButton = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-  return <button onClick={handleWhatsAppClick} aria-label="Falar no WhatsApp" className="fixed bottom-6 right-6 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group hover:scale-105 bg-transparent">
+  return <button onClick={handleWhatsAppClick} aria-label="Falar no WhatsApp" className="fixed bottom-6 right-6 text-white p-3 rounded-full transition-all duration-300 z-50 group hover:scale-105 bg-transparent">
       <img src="/lovable-uploads/859235eb-d75f-4ef1-bbb8-6d3fb5b37c55.png" alt="WhatsApp" className="w-12 h-12 transition-transform" />
       
       {/* Tooltip */}
@@ -16,3 +17,4 @@ export const WhatsAppButton = () => {
       </div>
     </button>;
 };
+

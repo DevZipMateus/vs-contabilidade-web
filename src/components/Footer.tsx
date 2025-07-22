@@ -126,7 +126,7 @@ export const Footer = () => {
               Todos os direitos reservados.
             </p>
             <p className="text-white/60 text-sm">
-              Desenvolvido com excelência para sua empresa
+              Desenvolvido por MonteSite e Zipline
             </p>
           </div>
         </div>
